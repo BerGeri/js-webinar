@@ -16,9 +16,13 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
+        if(a > b) {
+            [a, b] = [a-b, b];
+        } else {
+            [a, b] = [a, b-a];
+        }
+   return gcd=a||b;
 
     // ...AND THIS COMMENT LINE!
-    return gcd;
 }
 module.exports = euclidean;
